@@ -53,6 +53,6 @@ TODO:
     we check for clones by time & file name & compare them to decrate-history.txt
     constantly check for updates
     find the name of the file by checking length of song
-    add the song to a suitable folder
-    
+    *add t.me links to file 
+    *update telegra.ph
     """
