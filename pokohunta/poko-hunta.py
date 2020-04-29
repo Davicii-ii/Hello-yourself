@@ -23,7 +23,8 @@ with Client('de_crate', api_id, api_hash) as app:
             try:
                 for msg in app.iter_history(decrate):
                     if msg.media:
-                        print(msg, file=f)
+                        print(type(msg))
+                        print(msg,file=f)
             except(AttributeError) as e:
                 print(e)
     except(FileNotFoundError) as e:
