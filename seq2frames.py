@@ -1,17 +1,21 @@
 import ffmpeg, sys, os
 
-def gifeyes():
+def use_lin():
     (
         ffmpeg
         .input('../storage/pictures/X/*.jpg', pattern_type='glob', framerate=1) # 4.669
-        .filter('deflicker', mode='pm', size=10)
-        .filter('scale', size='hd1080', force_original_aspect_ratio='increase')
-        .output('out.mp4', crf=20, preset='slower', pix_fmt='yuv420p')
-        .view(filename='filter_graph')
+        .output('out.mp4')
         .run_async()
-        exit()
     )
 
-
+def use_win():
+    (
+        ffmpeg
+        .input('../Pictures/X/*.jpg', pattern_type='glo\
+b', framerate=1) # 4.669
+        .output('out.mp4')
+        .run_async()
+    )
+    
 def loop():
     pass
