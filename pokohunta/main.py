@@ -9,13 +9,3 @@ def de_history():
     with open('pokohunta/obj/de_record.txt', 'w') as f:
         for msg in app.iter_history(decrate):
             print(msg, file=f)
-
-"""
-TODO:
-    *add t.me links to file
-    *update telegra.ph
-    *call functions outside this file. init
-"""
-if __name__ == '__main__':
-    with Client('de_crate', api_id, api_hash) as app:
-        de_history()
